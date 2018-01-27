@@ -1,11 +1,17 @@
+#include "slow_header.h"
+#define M0 void foo(); void bar();
+#define M1 M0 M0 M0 M0 M0
+#define M2 M1 M1 M1 M1 M1
+#define M3 M2 M2 M2 M2 M2
+#define M6 M3 M3 M3 M3 M3
+#define M7 M6 M6 M6 M6
+#define M8 M7 M7 M7 M7
+#define M9 M8 M8 M8 M8
+M10
+
+
 #include <iostream>
 
-#include "header.h"
-
-//#define X // comment-uncomment to trigger reparsing
-#ifdef X
-#include "slow-header.h"
-#endif
 
 using namespace std;
 
